@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-RUN ufw allow OpenSSH && ufw enable && apt update && apt -y install apache2 && ufw allow 'Apache'
+RUN apt update && apt -y install apache2 ufw openssh-server && ufw allow OpenSSH && ufw enable && ufw allow 'Apache'
 WORKDIR /var/www/fotografobrasileiroemamsterdam
 COPY . .
 EXPOSE 80
