@@ -1,8 +1,8 @@
 #!/bin/bash
 
 option1=$1
-imageName = silvionetto/fotografobrasileiroemamsterdam
-imageVersion = 0.0.1
+imageName=silvionetto/fotografobrasileiroemamsterdam
+imageVersion=0.0.1
 
 if [ $option1 = "build" ]
 then
