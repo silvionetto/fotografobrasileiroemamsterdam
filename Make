@@ -1,8 +1,15 @@
 #!/bin/bash
 
 option1=$1
+imageName = silvionetto/fotografobrasileiroemamsterdam
+imageVersion = 0.0.1
 
 if [ $option1 = "build" ]
 then
-  docker build -t silvionetto/fotografobrasileiroemamsterdam:0.0.1 .
+  docker build -t $imageName:$imageVersion .
+elif [ $option1 = "run" ]
+then
+  docker run -it $imageName:$imageVersion
+else
+  echo "Invalid Option!"
 fi
