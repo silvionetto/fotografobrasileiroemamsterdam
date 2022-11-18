@@ -9,7 +9,7 @@ then
   docker build -t $imageName:$imageVersion .
 elif [ $option1 = "run" ]
 then
-  docker run -it $imageName:$imageVersion
+  winpty docker run -it --rm --name app -p 80:80 $imageName:$imageVersion
 else
   echo "Invalid Option!"
 fi

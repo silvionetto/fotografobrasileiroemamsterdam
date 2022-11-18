@@ -1,5 +1,4 @@
-FROM ubuntu:latest
-RUN apt update && apt -y install apache2 ufw openssh-server && ufw allow OpenSSH && ufw enable && ufw allow 'Apache'
-WORKDIR /var/www/fotografobrasileiroemamsterdam
+FROM httpd:2.4
+WORKDIR /usr/local/apache2/htdocs/
 COPY . .
 EXPOSE 80
