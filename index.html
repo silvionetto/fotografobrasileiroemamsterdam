@@ -9,6 +9,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <style>
+    body {
+      background-color: #000000;
+    }
     .jumbotron {
       background-color: #000000;
       color: #ffffff;
@@ -51,6 +54,14 @@
       background-color: transparent;
       text-decoration: underline;
     }
+
+    nav {
+      float: left;
+      width: 10%;
+      background: #000000;
+      color: #FFF;
+      padding: 20px;
+    }
 </style>
 
   <title>Fot&oacute;grafa Brasileira em Amsterdam</title>
@@ -62,19 +73,84 @@
     <p>Fot&oacute;grafa, Brasileira e Jornalista!</p>
   </div>
 
-  <div class="container-fluid">
-   <div class="row">
-      <div class="col-sm-4">      
-        <img src="img/Amsterdam.png" class="img-circle person" alt="Amsterdam">      
+  <section>
+    <nav>
+      <ul class="nav nav-pills nav-stacked" role="tablist">
+        <li>
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#about">Sobre</button>
+        </li>
+        <li>
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#contacts">Contatos</button>
+        </li>
+        <li><a href="#">Portfif&oacute;lio</a></li>        
+      </ul>
+    </nav>
+
+    <article>
+      <h1>Fot&oacute;grafa Brasileira em Amsterdam</h1>
+      <p>Agende sua sess&atilde;o</p>
+    </article>
+  </section>
+
+  <div id="about" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center">Sobre</h4>
+        </div>
+        <div class="modal-body">
+          <p>Fotografa, Brasileira e Jornalista.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
-      <div class="col-sm-4">
-        <img src="img/Casa.png" class="img-circle person" alt="Casa">
-      </div>
-      <div class="col-sm-4">
-        <img src="img/Moinho.png" class="img-circle person" alt="Moinho">
-      </div>
+  
     </div>
   </div>
+
+  <div id="contacts" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center">Contatos</h4>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-2">
+                <a href="mailto:fotografabrasileiraemamsterdam@gmail.com">E-mail</a>
+              </div>
+              <div class="col-sm-2">
+                <a href="https://web.whatsapp.com/send?phone=31615222749" target="_blank">Whatsapp</a>
+              </div>
+              <div class="col-sm-2">
+                <a href="https://www.facebook.com/fotografobrasileiroemamsterdam/" target="_blank" title="Facebook">Facebook</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+       <div class="col-sm-4">      
+         <img src="img/Amsterdam.png" class="img-circle person" alt="Amsterdam">      
+       </div>
+     </div>
+   </div>
 
 <div>
   <div id="whatswidget-pre-wrapper" class="">
@@ -90,13 +166,13 @@
 
 <footer class="container-fluid text-center footer">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-2">
       <a href="mailto:fotografabrasileiraemamsterdam@gmail.com">E-mail</a>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-2">
       <a href="https://web.whatsapp.com/send?phone=31615222749" target="_blank">Whatsapp</a>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-2">
       <a href="https://www.facebook.com/fotografobrasileiroemamsterdam/" target="_blank" title="Facebook">Facebook</a>
     </div>
   </div>
